@@ -1,14 +1,21 @@
-function changeHeading() {
+let customerList = [];
 
-    let txtInput = document.getElementById("inputText");
-   
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
 
-    let userInput = txtInput.value; 
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary
+    }
 
-    console.log(userInput);
-    
-    let heading = document.getElementById("heading");
+    customerList.push(customer);
 
-    heading.innerText=userInput;
-
+    console.log(customerList);
 }
