@@ -11,3 +11,8 @@ function changeHeading() {
     
 }
 
+function changeHeading2() {
+    heading.innerText = "Rose"+ --number;
+    console.log("Clicked");
+    
+}
