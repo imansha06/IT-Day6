@@ -31,13 +31,7 @@ function loadTable(){
     let tblCustomers = document.getElementById("tblCustomers");
 
     tblCustomers.innerHTML+=`<tr>
-            <td>Saman</td>
-            <td>Walana</td>
-            <td>15</td>
-            <td>saman@email.com</td>
-            <td>750000</td>
-        </tr>`
-
+           
     console.log(tblCustomers);
     
 }
